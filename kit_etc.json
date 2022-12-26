@@ -1,0 +1,59 @@
+{
+	"window.commandCenter": true,
+	"editor.tabCompletion": "on",
+	"workbench.startupEditor": "none",
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	// "explorer.copyRelativePathSeparator": "/",
+	"security.workspace.trust.untrustedFiles": "open",
+
+	// formatter/code editor settings
+	"editor.wordWrap": "on",
+	"editor.wordWrapColumn": 110,
+	"editor.tabSize": 4,
+	"editor.detectIndentation": true,
+	"editor.insertSpaces": true,
+	"prettier.tabWidth": 4,
+	"editor.minimap.showSlider": "always",
+	"editor.minimap.size": "fit",
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[shellscript]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format"
+	},
+	"[ignore]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format"
+	},
+	"[dotenv]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format"
+	},
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"[javascript]": {
+		"editor.maxTokenizationLineLength": 2500
+	},
+	// "terminal.integrated.defaultProfile.windows": "Git Bash",
+	"terminal.integrated.sendKeybindingsToShell": true
+	// Extension/specifics
+	// "editor.defaultFormatter": "esbenp.prettier-vscode",
+	// "terminal.explorerKind": "external",
+	// "terminal.external.windowsExec": "C:\\Program Files\\Git\\git-bash.exe",
+	// "workbench.iconTheme": "file-icons",
+	// "workbench.colorTheme": "Default Dark+",
+	// >> file map =>=> =>=>
+	// <<= indent spectras
+	// "indentRainbow.colors": [
+	// 	"#2f004270",
+	// 	"#10006080",
+	// 	"#45555540",
+	// 	"#00a8de15"
+	// ],
+	// https://stackoverflow.com/questions/72449542/vs-code-indent-or-tabsize-problem-with-error-color
+	// "indentRainbow.errorColor": "#120024",
+	// "search.exclude": {
+	// 	"b/conda": true,
+	// 	"b\\conda": true,
+	// 	"cargo/registry": true,
+	// 	"cargo\\registry": true
+	// },
+}

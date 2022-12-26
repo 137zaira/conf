@@ -1,0 +1,253 @@
+{
+	// https://marketplace.visualstudio.com/items?itemName=file-icons.file-icons
+	// "workbench.iconTheme": "file-icons-colourless",
+	"workbench.iconTheme": "file-icons",
+	// "workbench.colorTheme": "Default Dark+",
+	// >> file map =>=> =>=>
+	"editor.minimap.showSlider": "always",
+	"editor.minimap.size": "fit",
+	// <<= indent spectras
+	"indentRainbow.colors": ["#2f004270", "#10006080", "#45555540", "#00a8de15"],
+	// // ORIGINAL "crates.incompatibleDecorator": "❌ ${version}"
+	// "crates.incompatibleDecorator": "^ ${version}",
+	// // ORIGINAL "crates.errorDecorator": "❗️❗️❗️",
+	// "crates.errorDecorator": "-?-",
+	// https://stackoverflow.com/questions/72449542/vs-code-indent-or-tabsize-problem-with-error-color
+	"indentRainbow.errorColor": "#120024",
+	// https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#scope-inspector
+	"editor.tokenColorCustomizations": {
+		"comments": "#7845ff",
+		"strings": "#c780f7",
+		"numbers": "#7b61fd",
+		"functions": "#58ccd9bc",
+		"keywords": "#505cff",
+		"variables": "#a7baff",
+		"types": "#fab189",
+		"textMateRules": [
+			{
+				"scope": ["source.python", "constant.language.python"],
+				"settings": {
+					"foreground": "#88a1ff"
+				}
+			},
+			{
+				"scope": ["source.rust"],
+				"settings": {
+					"foreground": "#7132f0"
+				}
+			},
+			{
+				"scope": [
+					"entity.name",
+					"variable.name",
+					"support.type.property-name"
+				],
+				"settings": {
+					"foreground": "#7cfcfe"
+					// "fontStyle": "bold"
+				}
+			},
+			{
+				"scope": ["string"],
+				"settings": {
+					"foreground": "#a48bff"
+					// "fontStyle": "bold"
+				}
+			},
+			{
+				"scope": [
+					// "meta.function-call.python",
+					"meta.function-call.generic.python"
+					// "meta.function.parameters.python",
+				],
+				"settings": {
+					"foreground": "#58ccd9"
+					// "fontStyle": "bold"
+				}
+			},
+			{
+				"scope": [
+					// "meta.function-call.python",
+					"constant.other.caps.python"
+				],
+				"settings": {
+					"foreground": "#dce1eb"
+					// "fontStyle": "bold"
+				}
+			},
+			{
+				"scope": ["constant.numeric", "support.variable"],
+				"settings": {
+					"foreground": "#4EC9B0de",
+					"fontStyle": "bold"
+				}
+			},
+			{
+				"scope": ["entity.name.function.rust"],
+				"settings": {
+					"foreground": "#44c6d1"
+				}
+			}
+		]
+		// ITokenColorizationRule[];
+		// "default?"
+		// !! like "keywords": "#4EC9B0"
+		// "keywords": "#c5b586"
+		// "source.shell": "#ABB2BF",
+	},
+
+	"workbench.colorCustomizations": {
+		// "foreground": "#afcfffaf",
+		// spaces i dug through for prop names
+		// https://marketplace.visualstudio.com/items?itemName=miguelsolorio.min-theme
+		// https://raw.githubusercontent.com/miguelsolorio/min-theme/master/themes/min-dark.json
+		// https://marketplace.visualstudio.com/items?itemName=mathstylish.tokyo-dark-themes
+
+		// window/titlebar...
+		"window.activeBorder": "#330077",
+		"window.inactiveBorder": "#330077",
+		"titleBar.activeBackground": "#090715",
+		"titleBar.activeForeground": "#8020fc",
+		"titleBar.inactiveBackground": "#040410",
+		"titleBar.inactiveForeground": "#6010dc",
+		"contrastBorder": "#000000",
+		"contrastActiveBorder": "#00002299",
+
+		// Main global UI elements
+		"button.background": "#7439d3",
+		"input.background": "#0539345c",
+		"input.foreground": "#88effa",
+		"input.placeholderForeground": "#7050ef",
+		"input.border": "#58aad99c",
+		"menu.background": "#0a0014",
+		"badge.background": "#553300",
+		"inputOption.activeBorder": "#88effa",
+		"inputOption.activeBackground": "#000000",
+		"editorWidget.background": "#1b0251",
+		"editorWidget.resizeBorder": "#cc88ff",
+		"editorWidget.foreground": "#79c7d5",
+		"editorWidget.border": "#5800fc",
+		"editor.foreground": "#afcfff",
+		"editor.selectionHighlightBackground": "#33006f",
+		"toolbar.activeBackground": "#000000",
+		"commandCenter.activeBackground": "#000000",
+		"toolbar.hoverBackground": "#000000",
+		"inputOption.hoverBackground": "#000000",
+		"settings.rowHoverBackground": "#000000",
+		"editor.hoverHighlightBackground": "#000000",
+		"editorHoverWidget.highlightForeground": "#000000",
+		"editorSuggestWidget.selectedForeground": "#a166ff",
+		"editorSuggestWidget.selectedIconForeground": "#a166ff",
+		"editorSuggestWidget.foreground": "#afcfff",
+		"icon.foreground": "#eaeeeebc",
+		"gitDecoration.modifiedResourceForeground": "#878755",
+		"panelTitle.activeBorder": "#33006f",
+		"panelTitle.activeForeground": "#9f95ff",
+		"panelTitle.inactiveForeground": "#6f55ff",
+		"panel.background": "#090034",
+
+		// ^ ^ ^ tabs ^ ^ ^
+		"editorGroupHeader.tabsBackground": "#100028cc",
+		"tab.activeBorderTop": "#a090a0",
+		"titleBar.border": "#000000",
+		"tab.activeForeground": "#dcdcdc",
+		"tab.activeBackground": "#5200cccc",
+		"tab.activeBorder": "#810cfe",
+		"tab.border": "#181a6f",
+		"tab.hoverBackground": "#5200aa",
+		"tab.inactiveBackground": "#120441",
+		// "tab.unfocusedHoverBackground": "#443842",
+		"tab.inactiveForeground": "#b9b2bc",
+
+		// ^> ^ ^> command center ^> ^ ^>
+		"commandCenter.border": "#5800fcbb",
+		"commandCenter.activeBorder": "#5800fc",
+		"commandCenter.foreground": "#5800fcbb",
+		"commandCenter.activeForeground": "#5800fc",
+		"commandCenter.background": "#0a0014",
+
+		// ^ "editor" title-bar (breadcrumb) ^
+		"breadcrumb.background": "#080816",
+		"breadcrumb.focusForeground": "#eeddaf",
+		"breadcrumb.activeSelectionForeground": "#eeddaf",
+		"breadcrumb.foreground": "#afcfffaf",
+
+		// below tabs shadow
+		"scrollbar.shadow": "#4400aa",
+
+		// < < < activityBar/Badge
+		"activityBar.background": "#12012a",
+		"activityBar.border": "#5800fc",
+		"activityBar.activeBackground": "#44339f33",
+		"activityBar.activeBorder": "#796bf4",
+		"activityBar.foreground": "#9f70ff",
+		"activityBar.inactiveForeground": "#623de5",
+		"activityBarBadge.background": "#ffffd045",
+		"activityBarBadge.foreground": "#000000",
+
+		// < < < sidebars
+		"sideBar.background": "#0a0123",
+		"sideBarTitle.foreground": "#a072f0",
+		"sideBar.foreground": "#8534ff",
+		"sideBarSectionHeader.foreground": "#7788f0",
+		"sideBarSectionHeader.background": "#2a009f44",
+		"list.hoverBackground": "#a141ff88",
+		"list.hoverForeground": "#c1b1ef",
+		// "settings.modifiedItemIndicator": "#ff4100",
+		"list.inactiveSelectionBackground": "#a141ff44",
+		"list.inactiveSelectionForeground": "#c5afcf",
+		// "list."
+		"list.focusHighlightForeground": "#000000",
+
+		// Editor
+		"editor.background": "#060010",
+		"editorCursor.foreground": "#a682ff",
+		"textLink.activeForeground": "#eeeeee",
+		"textLink.foreground": "#cc88ff",
+		"editor.selectionBackground": "#5700a6b0",
+		"editor.lineHighlightBackground": "#1f025c",
+		"editor.lineHighlightBorder": "#01012f",
+		"editor.inactiveSelectionBackground": "#124f4acc",
+		"editor.findMatchBackground": "#aa33ddaa",
+		"editor.findMatchBorder": "#ddfffd",
+		"editor.findMatchHighlightBackground": "#000000",
+		"editorBracketMatch.background": "#232087",
+		"editorBracketMatch.border": "#2a009f",
+		// editor::autocompletion widget
+		"editorSuggestWidget.background": "#08001f",
+		"editorSuggestWidget.border": "#5800fc",
+		"editorSuggestWidget.selectedBackground": "#77777777",
+		"editorSuggestWidget.focusHighlightForeground": "#88effacc",
+		"editorSuggestWidget.highlightForeground": "#6d1fff",
+		"editorHoverWidget.border": "#9e82fb",
+		// warning squiggles
+		"editorWarning.foreground": "#a96c54",
+		// << #line# rules
+		"editorGutter.background": "#000016",
+		"editorLineNumber.activeForeground": "#cfcfff",
+		"editorLineNumber.foreground": "#796BF4",
+		// indent borders
+		"editorIndentGuide.activeBackground": "#a682ff",
+		"editorIndentGuide.background": "#100050",
+		// >> scrollbar
+		"editorOverviewRuler.background": "#000000",
+		"scrollbarSlider.background": "#cfcfff2f",
+		"editorOverviewRuler.findMatchForeground": "#88effacc",
+		"minimapSlider.background": "#77777733",
+		"minimapSlider.hoverBackground": "#77777755",
+		"minimap.background": "#000704",
+		"minimap.selectionHighlight": "#220088",
+		"minimap.findMatchHighlight": "#888ffa99",
+
+		// grabby/hover color
+		"scrollbarSlider.activeBackground": "#4f548f",
+		"scrollbarSlider.hoverBackground": "#4f548f",
+
+		// BOTTOM BAR
+		"statusBar.background": "#18024a",
+		"statusBar.foreground": "#8e61ff",
+		"statusBar.debuggingBackground": "#14026c",
+		"statusBar.noFolderBackground": "#18024a"
+		// ^^^ editorWarning.foreground is extension error in statusBar
+	}
+}
