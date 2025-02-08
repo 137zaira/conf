@@ -42,6 +42,14 @@ mostly to refer you to these two settings:
 They give a breadcrumb to the scope for customizing the textMateRules you can use.  
 My keybindings usually dub shift since i use a hold shift mechanical kb.
 
+## OVERWRITE script
+
+Running this script will overwrite the config files in your vsconfig user directory. The settings.json file will be backed up if a backup does not exist, both keybinding.json and settings.json will be overwritten.
+
+```
+bash ./sample_overwrite.sh
+```
+
 ## Extensions-Theme
 
 [file-icons](https://marketplace.visualstudio.com/items?itemName=file-icons.file-icons)  
